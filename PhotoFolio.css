@@ -1,0 +1,617 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: black;
+    border-bottom: .1px solid #b9b9b9;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #b9b9b9;
+}
+
+.titlediv {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li a {
+    color: #b9b9b9;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.navbar li:hover a {
+    color: white;
+}
+
+.icon {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.icon a {
+    color: #b9b9b9;
+}
+
+.icon li img:hover {
+    color: #27a776;
+}
+
+.icon .lines a {
+    color: #b9b9b9;
+    text-decoration: none;
+    display: none;
+    width: 20px;
+    height: 10px;
+    font-size: 100px;
+}
+
+.icon li {
+    margin: 0 5px;
+}
+
+.nav-hidden {
+    display: none;
+    color: #b9b9b9;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 0;
+    position: fixed;
+    top: 66px;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #0e1011;
+}
+
+.nav-hidden a {
+    color: #b9b9b9;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.nav-hidden li {
+    padding: 20px;
+    padding-left: 2px;
+    margin-left: 2px;
+    list-style: none;
+
+}
+
+.nav-hidden li:hover a {
+    color: white;
+}
+
+/* General styling for the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button styling */
+.dropbtn {
+    text-decoration: none;
+    color: rgb(172, 172, 172);
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color:#333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it appears on top */
+}
+
+/* Dropdown links styling */
+.dropdown-content a {
+    color: #575757;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+    color: white;
+}
+
+/* Display dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Hover effect for dropdown button */
+.dropdown:hover .dropbtn {
+    background-color: #333;
+    color: white;
+}
+/* main */
+main {
+    padding-bottom: 100px;
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+    background-color: black;
+}
+
+.intro {
+    padding: 4.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.intro-text {
+    line-height: 1;
+    font-size: 6vh;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top: 160px;
+    width: 45%;
+
+}
+
+.intro-text-1 {
+    margin-bottom: 5.8vh;
+    margin-top: 2.5vh;
+    color: #b9b9b9;
+    line-height: 1.5;
+    font-size: 2.7vh;
+    width: 45%;
+    text-align: center;
+}
+
+.button {
+    width: 240px;
+    height: 45px;
+    font-size: 15px;
+    color: white;
+    background-color: #27a776;
+    border-style: none;
+    border-radius: 6px;
+    line-height: 1.5;
+    margin-bottom: 8vh;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1vmax;
+
+}
+
+.images div {
+    flex: calc(25% - 1vmax);
+    /* box-sizing: border-box;  */
+}
+
+.images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-top: .3px solid #b9b9b9;
+    background-color: #0e1011;
+    color: #b9b9b9;
+    margin-top: 7vh;
+}
+
+footer .last {
+    color: white;
+    font-weight: 400;
+    margin-top: 9vh;
+    margin-bottom: 5vh;
+
+}
+
+footer span {
+    color: #b9b9b9;
+    border: 1px solid #b9b9b9;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+footer span:hover {
+    color: #27a776;
+    border: 1px solid #27a776;
+}
+
+
+@media (max-width: 768px) {
+    .titlediv {
+        font-size: 5px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .icon {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .icon .lines a {
+        display: block;
+    }
+
+    .intro-text {
+        font-size: 4.5vh;
+        width: 100%;
+
+    }
+
+    .intro-text-1 {
+        font-size: 3vh;
+        width: 100%
+    }
+
+    .button {
+        font-size: 1.9vh;
+        padding: 12px 25px;
+    }
+
+    .images {
+        gap: 4vmax;
+    }
+
+    .images div {
+        flex: calc(100% - 4vmax);
+    }
+}
+    /* line animation */
+    .animation-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #111;
+      }
+  
+      .line {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 2px;
+        height: 0;
+        background: #ffffff;
+        animation: expand-line 1.5s ease-out forwards;
+      }
+  
+      .content {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0) scaleX(0);
+        width: 100%;
+        height: 100%;
+        animation: open-content 1s ease-in forwards;
+        animation-delay: 1.5s;
+      }
+  
+      @keyframes expand-line {
+        to {
+          height: 70%;
+          width: 1px;
+        }
+        100%{
+            background-color: #0e1011;
+        }
+      }
+  
+      @keyframes open-content {
+        to {
+          transform: translate(-50%, 0) scaleX(1);
+        }
+      }
+
+@media (max-width: 576px) {
+    .titlediv li {
+        font-size: 6px;
+    }
+
+    .nav {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titlediv li a {
+        font-size: 14px;
+    }
+
+    .intro-text {
+        font-size: 30px;
+        line-height: 1.4;
+    }
+
+    .intro-text-1 {
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+
+/*
+*,::after,::before {
+    box-sizing: border-box
+}
+
+body,html {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #000 url(../img/demo-bg.jpg) 0 0 repeat;
+    position: relative;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+}
+
+#header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 32px;
+    background: #023b6d;
+    display: flex;
+    align-items: center
+}
+
+.logo {
+    padding-left: 10px
+}
+
+.logo img {
+    height: 25px
+}
+
+.logo a {
+    display: flex
+}
+
+.logo strong {
+    margin-left: 6px;
+    text-transform: uppercase
+}
+
+.logo strong span {
+    color: #00a6eb
+}
+
+@media (max-width: 768px) {
+    .logo {
+        display:none
+    }
+}
+
+.preview-devices {
+    margin-top: 2px
+}
+
+.preview-devices ul {
+    margin: 0 0 0 20px;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    align-items: center
+}
+
+.preview-devices a {
+    transition: .3s;
+    color: rgba(255,255,255,.5);
+    display: inline-block;
+    padding: 5px 5px
+}
+
+.preview-devices a .icon {
+    width: 22px;
+    height: 22px
+}
+
+.preview-devices a:hover {
+    color: #fff
+}
+
+.preview-devices .preview-devices-active a {
+    color: #fff
+}
+
+@media (max-width: 1024px) {
+    .preview-devices {
+        display:none
+    }
+}
+
+.navigate {
+    display: flex;
+    margin-left: auto;
+    align-items: center
+}
+
+.navigate .icon {
+    width: 22px;
+    height: 22px
+}
+
+.navigate a {
+    transition: .3s;
+    color: rgba(255,255,255,.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none
+}
+
+.navigate a:hover {
+    color: #fff
+}
+
+.navigate .download {
+    background: #00a6eb;
+    color: #fff;
+    font-size: 13px;
+    padding: 0 16px;
+    height: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 15px;
+    white-space: nowrap
+}
+
+.navigate .download .icon {
+    width: 20px;
+    height: 20px
+}
+
+.navigate .download span {
+    padding-left: 6px
+}
+
+.navigate .download:hover {
+    background: #00b4ff
+}
+
+@media (max-width: 768px) {
+    .navigate .download {
+        padding:0 10px;
+        font-size: 12px;
+        margin-left: 10px
+    }
+
+    .navigate .download .icon {
+        display: none
+    }
+}
+
+.current-template {
+    margin-top: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px
+}
+
+@media (min-width: 768px) {
+    .current-template {
+        padding-left:0;
+        margin-left: auto
+    }
+}
+
+.current-template .icon {
+    width: 24px;
+    height: 24px
+}
+
+.current-template a {
+    transition: .3s;
+    color: rgba(255,255,255,.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none
+}
+
+.current-template a:hover {
+    color: #fff
+}
+
+.current-template .template-home {
+    font-size: 16px;
+    padding: 0;
+    font-weight: 700;
+    color: #fff;
+    margin: -2px 10px 0 10px;
+    line-height: 0;
+    text-decoration: none
+}
+
+#preview {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 32px;
+    bottom: 0;
+    transition: all .2s
+}
+
+#preview-frame {
+    border: 0;
+    position: absolute
+}
+
+.preview-desktop {
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.preview-tablet {
+    width: 768px;
+    height: 100%;
+    left: calc(50% - 384px)
+}
+
+.preview-mobile {
+    width: 380px;
+    height: 680px;
+    left: calc(50% - 190px);
+    top: 0;
+    margin-top: 20px
+}
+
+*/
