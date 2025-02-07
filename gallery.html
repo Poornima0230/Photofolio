@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="./gallery.css">
+    
     <script>
         function showside() {
             document.getElementById('open').style.display = 'block';
@@ -10,6 +10,9 @@
             document.getElementById('open').style.display = 'none';
         }
     </script>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./gallery.css">
 </head>
 
 <body>
@@ -28,10 +31,10 @@
 
                     <!-- Navigation Links -->
                     <ul class="navbar">
-                        <li><a href="./PhotoFolio.html">HOME</a></li>
+                        <li><a href="./index.html">HOME</a></li>
                         <li><a href="./about.html">ABOUT</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropbtn">
+                            <a href="./gallery.html" class="dropbtn">
                                 GALLERY&nbsp;<img src="./imges/drop_down.svg">
                             </a>
                             <div class="dropdown-content">
@@ -48,15 +51,26 @@
                     </ul>
 
                     <!-- Social Icons -->
-                    <ul class="icon">
-                        <li><a href="#"><img src="./imges/twitter.svg"></a></li>
-                        <li><a href="#"><img src="./imges/facebook.svg"></a></li>
-                        <li><a href="#"><img src="./imges/insta.svg"></a></li>
-                        <li><a href="#"><img src="./imges/linkedin.svg"></a></li>
-                        <li class="lines" onclick="showside()"><a href="#" style="font-size: 20px;">&#9776;</a></li>
-                    </ul>
-                </div>
-
+            <ul class="icon">
+                <div class="icons">
+                <li>
+                  <a href="#"><img src="./imges/twitter.svg" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./imges/facebook.svg" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./imges/insta.svg" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./imges/linkedin.svg" /></a>
+                </li>
+              </div>
+                <li class="lines" onclick="showside()">
+                  <a href="#" style="font-size: 20px">&#9776;</a>
+                </li>
+              </ul>
+            </div>
                 <div>
                     <!-- hidden-navbar -->
                     <ul class="nav-hidden hideOnMoblie" id="open">
@@ -68,9 +82,12 @@
                                 GALLERY&nbsp;<img src="./imges/drop_down.svg">
                             </a>
                             <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
+                                <a href="./gallery.html">Nature</a>
+                                <a href="./gallery.html">people</a>
+                                <a href="./gallery.html">Architecture</a>
+                                <a href="./gallery.html">Animals</a>
+                                <a href="./gallery.html">Sports</a>
+                                <a href="./gallery.html">Travel</a>
                             </div>
                         </li>
                         <li><a href="./serives.html">SERVICES</a></li>
@@ -98,15 +115,15 @@
                     </div>
              
                 <section class="images">
-                    <div><img src="./gallery-1.jpg"></div>
-                    <div><img src="./gallery-2.jpg"></div>
-                    <div><img src="./gallery-3.jpg"></div>
-                    <div><img src="./gallery-4.jpg"></div>
-                    <div><img src="./gallery-5.jpg"></div>
-                    <div><img src="./gallery-6.jpg"></div>
+                    <div><img src="./imges/gallery-1.jpg"></div>
+                    <div><img src="./imges/gallery-2.jpg"></div>
+                    <div><img src="./imges/gallery-3.jpg"></div>
+                    <div><img src="./imges/gallery-4.jpg"></div>
+                    <div><img src="./imges/gallery-5.jpg"></div>
+                    <div><img src="./imges/gallery-6.jpg"></div>
 
-                    <div><img src="./gallery-7.jpg"></div>
-                    <div><img src="./gallery-8-2.jpg"></div>
+                    <div><img src="./imges/gallery-7.jpg"></div>
+                    <div><img src="./imges/gallery-8-2.jpg"></div>
 
                 </section>
                 <footer>
