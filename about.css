@@ -1,3 +1,10 @@
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+
+
 body {
     background-color: black;
     font-family: Arial, sans-serif;
@@ -174,7 +181,7 @@ main {
     margin-top: 5px;
 }
 
-.introtext {
+.intro-text {
     line-height: 1;
     font-size: 6vh;
     font-weight: bold;
@@ -185,7 +192,7 @@ main {
 
 }
 
-.introtext-1 {
+.intro-text-1 {
     margin-bottom: 4.8vh;
     margin-top: 2.5vh;
     color: #b9b9b9;
@@ -361,22 +368,6 @@ footer span:hover {
         display: block;
     }
 
-    .introtext {
-        font-size: 5.5vh;
-        width: 100%;
-
-    }
-
-    .introtext-1 {
-        font-size: 2.5vh;
-        width: 100%
-    }
-
-    .button {
-        font-size: 1.9vh;
-        padding: 12px 25px;
-    }
-
     .about {
         flex-direction: column;
         gap: 15px;
@@ -392,17 +383,18 @@ footer span:hover {
 
     }
     .intro-text {
-        font-size: 6vh;
+        font-size: 5rem;
         width: 100%;
 
     }
 
     .intro-text-1 {
-        font-size: 1vh;
+        font-size: 2rem;
         width: 100%
     }
     .button{
-        font-size: 20px;
+        font-size: 1rem;
+        padding: 12px 25px;
     }
 }
 
@@ -431,7 +423,7 @@ footer span:hover {
         display: block;
     }
     .intro-text {
-        font-size: 3rem;
+        font-size: 3.5rem;
         line-height: 1.4;
     }
 
@@ -461,25 +453,19 @@ footer span:hover {
     .icon .lines a {
         display: block;
     }
-
     .intro-text {
-        font-size: 30px;
+        font-size: 2rem;
         line-height: 1.4;
     }
 
     .intro-text-1 {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .button {
-        font-size: 14px;
+        font-size: 1rem;
         padding: 10px 20px;
     }
 
 }
 
-*,
-::after,
-::before {
-    box-sizing: border-box
-}
