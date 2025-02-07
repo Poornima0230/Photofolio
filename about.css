@@ -3,7 +3,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
 nav {
     position: fixed;
     width: 100%;
@@ -49,6 +48,10 @@ nav {
     display: flex;
     padding: 0;
     margin: 0;
+}
+.icons{
+    display: flex;
+    
 }
 
 .icon a {
@@ -388,25 +391,19 @@ footer span:hover {
         flex: 2;
 
     }
+    .intro-text {
+        font-size: 6vh;
+        width: 100%;
 
-    /* .about{
-      
-       justify-content: space-evenly;
-       flex-direction: column;
-       gap: 0;
-      
     }
-      border: 1px solid white;
+
+    .intro-text-1 {
+        font-size: 1vh;
+        width: 100%
     }
-    .about-text{
-        margin: 0%;
-        border: 1px solid white;
-        padding: 0;
-    } */
-
-
-
-
+    .button{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -417,11 +414,52 @@ footer span:hover {
     .nav {
         font-size: 10px;
     }
+    .navbar {
+        display: none;
+    }
+
+    .icon {
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+    .icons{
+        display:none;
+    }
+
+    .icon .lines a {
+        display: block;
+    }
+    .intro-text {
+        font-size: 3rem;
+        line-height: 1.4;
+    }
+
+    .intro-text-1 {
+        font-size: 1rem;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
 }
 
 @media (max-width: 480px) {
     .titlediv li a {
         font-size: 14px;
+    }
+    .navbar {
+        display: none;
+    }
+
+    .icon {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .icon .lines a {
+        display: block;
     }
 
     .intro-text {
