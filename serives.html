@@ -1,195 +1,251 @@
 <html>
-
-<head>
-    
+  <head>
     <script>
-        function showside() {
-            document.getElementById('open').style.display = 'block';
-        }
-        function hideside() {
-            document.getElementById('open').style.display = 'none';
-        }
+      function showside() {
+        document.getElementById("open").style.display = "block";
+      }
+      function hideside() {
+        document.getElementById("open").style.display = "none";
+      }
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./servies.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>PhotoFolio - Professional Photography Portfolio</title>
+    <link rel="stylesheet" href="./errorfind.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="animation-container">
-        <div class="line"></div>
-        <div class="content">
-            <nav>
-                <div class="nav-container">
-                    <!-- Logo Section -->
-                    <ul class="titlediv">
-                        <li><a href="#"><img src="./imges/camera.svg"
-                                    style="color:#27a776;size:50px;background-color:black;width:40px;height:35px"></a>
-                        </li>
-                        <li><a href="#" style="color:white;font-size: 30px;text-decoration: none;">PhotoFolio</a></li>
-                    </ul>
+      <div class="line"></div>
+      <div class="content">
+        <nav>
+          <div class="nav-container">
+            <!-- Logo Section -->
+            <ul class="titlediv">
+              <li>
+                <a href="#"
+                  ><img
+                    src="./imges/camera.svg"
+                    style="
+                      color: #27a776;
+                      size: 50px;
+                      background-color: black;
+                      width: 40px;
+                      height: 35px;
+                    "
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="
+                    color: white;
+                    font-size: 40px;
+                    text-decoration: none;
+                    font-family: 'Times New Roman', Times, serif;
+                  "
+                  >PhotoFolio</a
+                >
+              </li>
+            </ul>
 
-                    <!-- Navigation Links -->
-                    <ul class="navbar">
-                        <li><a href="./PhotoFolio.html">HOME</a></li>
-                        <li><a href="./about.html">ABOUT</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropbtn">
-                                GALLERY&nbsp;<img src="./imges/drop_down.svg">
-                            </a>
-                            <div class="dropdown-content">
-                                <a href="./gallery.html">Nature</a>
-                                <a href="./gallery.html">people</a>
-                                <a href="./gallery.html">Architecture</a>
-                                <a href="./gallery.html">Animals</a>
-                                <a href="./gallery.html">Sports</a>
-                                <a href="./gallery.html">Travel</a>
-                            </div>
-                        </li>                        <li><a href="./serives.html" style="color: aliceblue;">SERVICES</a></li>
-                        <li><a href="./contact.html">CONTACT</a></li>
-                    </ul>
+            <!-- Navigation Links -->
+            <ul class="navbar">
+              <li>
+                <a href="./PhotoFolio.html" style="color: aliceblue">HOME</a>
+              </li>
+              <li>
+                <a href="./about.html"
+                  >ABOUT</a
+                >
+              </li>
+              <li class="dropdown">
+                <a href="./gallery.html" class="dropbtn">
+                  GALLERY&nbsp;<img src="./imges/drop_down.svg" />
+                </a>
+                <div class="dropdown-content">
+                  <a href="./gallery.html">Nature</a>
+                  <a href="./gallery.html">people</a>
+                  <a href="./gallery.html">Architecture</a>
+                  <a href="./gallery.html">Animals</a>
+                  <a href="./gallery.html">Sports</a>
+                  <a href="./gallery.html">Travel</a>
+                </div>
+              </li>
+              <li><a href="./serives.html">SERVICES</a></li>
+              <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
 
-                    <!-- Social Icons -->
+            <!-- Social Icons -->
             <ul class="icon">
-                <div class="icons">
-                <li>
-                  <a href="#"><img src="./imges/twitter.svg" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="./imges/facebook.svg" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="./imges/insta.svg" /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="./imges/linkedin.svg" /></a>
-                </li>
-              </div>
-                <li class="lines" onclick="showside()">
-                  <a href="#" style="font-size: 20px">&#9776;</a>
-                </li>
-              </ul>
+              <div class="icons">
+              <li>
+                <a href="#"><img src="./imges/twitter.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./imges/facebook.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./imges/insta.svg" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./imges/linkedin.svg" /></a>
+              </li>
             </div>
+              <li class="lines" onclick="showside()">
+                <a href="#" style="font-size: 20px">&#9776;</a>
+              </li>
+            </ul>
+          </div>
 
-                <div>
-                    <!-- hidden-navbar -->
-                    <ul class="nav-hidden hideOnMoblie" id="open">
-                        <li><a href="#" style="font-size: 30px;" onclick="hideside()">&times;</a></li>
-                        <li><a href="./PhotoFolio.html">HOME</a></li>
-                        <li><a href="./about.html">ABOUT</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropbtn">
-                                GALLERY&nbsp;<img src="./imges/drop_down.svg">
-                            </a>
-                            <div class="dropdown-content">
-                                <a href="./gallery.html">Nature</a>
-                                <a href="./gallery.html">people</a>
-                                <a href="./gallery.html">Architecture</a>
-                                <a href="./gallery.html">Animals</a>
-                                <a href="./gallery.html">Sports</a>
-                                <a href="./gallery.html">Travel</a>
-                            </div>
-                        </li>                        <li><a href="./serives.html">SERVICES</a></li>
-                        <li><a href="./contact.html">CONTACT</a></li>
-                    </ul>
+          <div>
+            <!-- hidden-navbar -->
+            <ul class="nav-hidden" id="open">
+              <li>
+                <a
+                  href="#"
+                  style="font-size: 30px; position: fixed; top: 76px; right: 0"
+                  onclick="hideside()"
+                  >&times;</a
+                >
+              </li>
+              <li><a href="./PhotoFolio.html">HOME</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">
+                  GALLERY&nbsp;<img src="./imges/drop_down.svg" />
+                </a>
+                <div class="dropdown-content">
+                  <a href="./gallery.html">Nature</a>
+                  <a href="./gallery.html">people</a>
+                  <a href="./gallery.html">Architecture</a>
+                  <a href="./gallery.html">Animals</a>
+                  <a href="./gallery.html">Sports</a>
+                  <a href="./gallery.html">Travel</a>
                 </div>
-            </nav>
-            <main>
-                <section class="intro">
-                    <div class="intro-text" style="font-family: 'Times New Roman', Times, serif;">
-                        Services
-                    </div>
-                    <div class="intro-text-1"> Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio
-                        sint
-                        voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi
-                        ratione
-                        sint. Sit quaerat ipsum dolorem.Blanditiis praesentium aliquam illum tempore incidunt debitis
-                        dolorem
-                        magni est deserunt sed qui libero. Qui voluptas amet.
-                    </div>
-                    <div>
-                        <button type="button" class="button">AVAILABLE FOR HIRE</button>
-                    </div>
-                </section>
-                <section>
-                    <div style="width:100%;background-color: #424242;height:70px;padding-left:90px;padding-top: 23px;font-size: 25px;">
-                        <a href="./PhotoFolio.html" style="text-decoration: none;color:#27a776">Home</a> /
-                        <a href="./serives.html" style="text-decoration: none;color: aliceblue;">Services</a>
-                    </div>
-                </section>
-                <section>
-                    <div class="divs">
-                        <div class="d1">
-                            <img src="./imges/white_heartbeat.svg">
-                            <h3>Lorem Ipsum</h3>
-                            <p>Voluptatum delenti atque corrupti quos dolores at quas molestias excepturi</p>
-                        </div>
-                        <div class="d2">
-                            <img src="./imges/white_square.svg">
-                            <h3>Sed ut perspici</h3>
-                            <p>Duis aute irure dolor in reprehendreit in voluptate velit esse cillum dolore</p>
-                        </div>
-                        <div class="d3">
-                            <img src="./imges/white_calender.svg">
-                            <h3>Magni Dolores</h3>
-                            <p>Excepteur sint occaecat cupidat non prodient ,sunt in culpa qui officia</p>
-                        </div>
-                        <div class="d4">
-                            <img src="./imges/white_signal.svg">
-                            <h3>Nemo Enim</h3>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="price_heading">
-                        <div style="display:flex;flex-direction:row">
-                            <div class="price">PRICING</div>
-                            <div>
-                                <hr style="width:100px;height:1px;border:1px solid #27a776;margin-left:3px">
-                            </div>
-                        </div>
-                        <p class="prices">Check my adorable pricing</p>
+              </li>
+              <li><a href="./serives.html">SERVICES</a></li>
+              <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </nav>
+        <main>
 
-                    </div>
 
-                    <div class="pricing">
-                        <div class="p1">
-                            <div><span style="font-size: 20px;font-weight: 800;">Portrait Photography</span><span
-                                    style="color: #27a776;">$160.00</span></div>
-                            <div><span style="width:500px;font-size: 20px;font-weight: 800;">Sports
-                                    Photography</span><span style="color: #27a776;">$160.00</span></div>
-                            <div><span style="width:500px;font-size: 20px;font-weight: 800;">Wedding
-                                    Photography</span><span style="color: #27a776;">$160.00</span></div>
-                        </div>
-                        <div class="p2">
-                            <div><span style="width:500px;font-size: 20px;font-weight: 800;">Fashion
-                                    Photography</span><span style="color: #27a776;">$160.00</span></div>
-                            <div><span style="width:500px;font-size: 20px;font-weight: 800;">Still Life
-                                    Photography</span><span style="color: #27a776;">$160.00</span></div>
-                            <div><span style="width:500px;font-size: 20px;font-weight: 800;">Photojournalism</span><span
-                                    style="color: #27a776;">$160.00</span></div>
-                        </div>
-                    </div>
-                    </seciton>
-            </main>
-            <footer>
+          <section class="intro">
+            <div class="intro-text" style="font-family: 'Times New Roman', Times, serif;">
+                Services
+            </div>
+            <div class="intro-text-1"> Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio
+                sint
+                voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi
+                ratione
+                sint. Sit quaerat ipsum dolorem.Blanditiis praesentium aliquam illum tempore incidunt debitis
+                dolorem
+                magni est deserunt sed qui libero. Qui voluptas amet.
+            </div>
+            <div>
+                <button type="button" class="button">AVAILABLE FOR HIRE</button>
+            </div>
+        </section>
 
-                <h4 class="last">© Copyright <b>PhotoFolio</b> All Rights Reserved</h4>
-                <div class="i">
-                    <span><img src="./imges/twitter.svg"></span>
-                    <span><img src="./imges/facebook.svg"></span>
-                    <span><img src="./imges/insta.svg"></span>
-                    <span><img src="./imges/linkedin.svg"></span>
-                </div>
-                <h5 style="color: aliceblue;"> Designed by <font style="color: #27a776;">BootstrapMade</font>
-                </h5>
+        <div
+        style="width:100%;background-color: #0e1011;height:70px;padding-left:90px;padding-top: 23px;font-size: 20px;margin-bottom: 50px;">
+        <a href="./PhotoFolio.html" style="text-decoration: none;color:#27a776">Home</a> /
+        <a href="./serives.html" style="text-decoration: none;color: aliceblue;">Services</a>
+    </div>
+          
 
-            </footer>
+    <section>
+      <div class="divs">
+          <div class="d1">
+              <img src="./imges/white_heartbeat.svg">
+              <h3>Lorem Ipsum</h3>
+              <p>Voluptatum delenti atque corrupti quos dolores at quas molestias excepturi</p>
+          </div>
+          <div class="d2">
+              <img src="./imges/white_square.svg">
+              <h3>Sed ut perspici</h3>
+              <p>Duis aute irure dolor in reprehendreit in voluptate velit esse cillum dolore</p>
+          </div>
+          <div class="d3">
+              <img src="./imges/white_calender.svg">
+              <h3>Magni Dolores</h3>
+              <p>Excepteur sint occaecat cupidat non prodient ,sunt in culpa qui officia</p>
+          </div>
+          <div class="d4">
+              <img src="./imges/white_signal.svg">
+              <h3>Nemo Enim</h3>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+          </div>
+      </div>
+  </section>
+
+
+  <section>
+    <div class="price_heading">
+        <div style="display:flex;flex-direction:row">
+            <div class="price">PRICING</div>
+            <div class="horline">
+                
+            </div>
+        </div>
+
+    <p class="prices">Check my adorable pricing</p>
+
+    </div>
+
+    <div class="pricing">
+        <div class="p1">
+            <div>
+              <span style="font-size: 20px;font-weight: 800;">Portrait Photography</span>
+              <span style="color: #27a776;">$160.00</span>
+            </div>
+            <div>
+              <span style="width:500px;font-size: 20px;font-weight: 800;">Sports Photography</span>
+              <span style="color: #27a776;">$160.00</span>
+            </div>
+            <div>
+              <span style="width:500px;font-size: 20px;font-weight: 800;">Wedding Photography</span>
+              <span style="color: #27a776;">$160.00</span>
+            </div>
+        </div>
+        <div class="p2">
+            <div>
+              <span style="width:500px;font-size: 20px;font-weight: 800;">Fashion Photography</span>
+              <span style="color: #27a776;">$160.00</span>
+            </div>
+            <div>
+              <span style="width:500px;font-size: 20px;font-weight: 800;">Still Life Photography</span>
+              <span style="color: #27a776;">$160.00</span>
+            </div>
+            <div>
+              <span style="width:500px;font-size: 20px;font-weight: 800;">Photojournalism</span>
+              <span style="color: #27a776;">$160.00</span>
+            </div>
         </div>
     </div>
-</body>
+    </seciton>
 
+
+
+        </main>
+        <footer>
+          <h4 class="last">
+            © Copyright <b>PhotoFolio</b> All Rights Reserved
+          </h4>
+          <div class="i">
+            <span><img src="./imges/twitter.svg" /></span>
+            <span><img src="./imges/facebook.svg" /></span>
+            <span><img src="./imges/insta.svg" /></span>
+            <span><img src="./imges/linkedin.svg" /></span>
+          </div>
+          <h5 style="color: aliceblue">
+            Designed by <font style="color: #27a776">BootstrapMade</font>
+          </h5>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>
