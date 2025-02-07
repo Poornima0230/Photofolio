@@ -177,7 +177,7 @@ main {
 
 .intro-text {
     line-height: 1;
-    font-size: 9vh;
+    font-size: 6vh;
     font-weight: bold;
     color: white;
     text-align: center;
@@ -190,9 +190,9 @@ main {
     margin-bottom: 5.8vh;
     margin-top: 2.5vh;
     color: #b9b9b9;
-    line-height: 1.3;
-    font-size: 2.2vh;
-    width: 60%;
+    line-height: 1.5;
+    font-size: 2.7vh;
+    width: 45%;
     text-align: center;
 }
 
@@ -280,6 +280,9 @@ main {
     height: 30px;
 }
 
+.horline{
+    width:100px;height:1px;border:1px solid #27a776;margin-left:3px;
+}
 .prices {
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
@@ -365,50 +368,7 @@ footer span:hover {
     border: 1px solid #27a776;
 }
 
-.animation-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: #111;
-  }
 
-  .line {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 2px;
-    height: 0;
-    background: #ffffff;
-    animation: expand-line 1.5s ease-out forwards;
-  }
-
-  .content {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0) scaleX(0);
-    width: 100%;
-    height: 100%;
-    animation: open-content 1s ease-in forwards;
-    animation-delay: 1.5s;
-  }
-
-  @keyframes expand-line {
-    to {
-      height: 70%;
-      width: 1px;
-    }
-    100%{
-        background-color: #0e1011;
-    }
-  }
-
-  @keyframes open-content {
-    to {
-      transform: translate(-50%, 0) scaleX(1);
-    }
-  }
 @media (max-width: 768px) {
     .titlediv {
         font-size: 5px;
@@ -428,13 +388,13 @@ footer span:hover {
     }
 
     .intro-text {
-        font-size: 7vh;
+        font-size: 4.5vh;
         width: 100%;
 
     }
 
     .intro-text-1 {
-        font-size: 2vh;
+        font-size: 3vh;
         width: 100%
     }
 
@@ -442,23 +402,61 @@ footer span:hover {
         font-size: 1.9vh;
         padding: 12px 25px;
     }
-
     .divs {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 420vw;
     }
-
-    .prices {
-        margin-left: 90px;
-    }
-
-    .price {
-        margin-left: 90px;
+    .divs div{
+        width:100%;
     }
 
 }
+    /* line animation */
+    .animation-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #111;
+      }
+  
+      .line {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 2px;
+        height: 0;
+        background: #ffffff;
+        animation: expand-line 1.5s ease-out forwards;
+      }
+  
+      .content {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0) scaleX(0);
+        width: 100%;
+        height: 100%;
+        animation: open-content 1s ease-in forwards;
+        animation-delay: 1.5s;
+      }
+  
+      @keyframes expand-line {
+        to {
+          height: 70%;
+          width: 1px;
+        }
+        100%{
+            background-color: #0e1011;
+        }
+      }
+  
+      @keyframes open-content {
+        to {
+          transform: translate(-50%, 0) scaleX(1);
+        }
+      }
 
 @media (max-width: 576px) {
     .titlediv li {
@@ -484,6 +482,15 @@ footer span:hover {
     .icon .lines a {
         display: block;
     }
+    
+    .divs {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .divs div{
+        width:100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -504,23 +511,50 @@ footer span:hover {
     }
 
     .intro-text {
-        font-size: 30px;
+        font-size: 2.5rem;
         line-height: 1.4;
     }
 
     .intro-text-1 {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .button {
         font-size: 14px;
         padding: 10px 20px;
     }
+
+    .divs {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .divs div{
+        width:100%;
+    }
+    .prices{
+        margin:3%;
+        font-size: 2rem;
+    }
+    .price{
+        margin:3%;
+        font-size:1rem;
+    }
+    .horline{
+        margin-top:4%;
+        font-size:1rem;
+    }
+
+    .p1,.p2{
+        
+   width:100%
+    }
+   
 }
 
 *,
 ::after,
 ::before {
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
